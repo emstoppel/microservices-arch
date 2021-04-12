@@ -3,7 +3,7 @@ package evaluations
 type EvaluationInput map[string]interface{}
 type RuleSetOutput map[string]interface{}
 
-type Data struct {
+type EvaluationData struct {
 	ID              string `json:"id"`
 	EvaluationInput `json:"evaluation_input"`
 	EvaluationResult

@@ -1,6 +1,10 @@
 package evaluations
 
+import "github.com/emstoppel/microservices-arch/simulations"
+
+//Handler
 type Handler interface {
+	//PostEvaluation does
 	PostEvaluation()
 }
 
@@ -10,9 +14,9 @@ type handlerImpl struct {
 	gtw Gateway
 }
 
-func NewEvaluationService(db string) Handler{
+func NewEvaluationService(db string, simGTW simulations.Gateway) Handler {
 	return &handlerImpl{
-		gtw:NewGateway(db),
+		gtw: NewGateway(db, simGTW),
 	}
 }
 

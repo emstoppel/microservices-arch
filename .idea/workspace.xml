@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="10dbc1f6-4c9e-4537-8a30-b591a76ea5ed" name="Default Changelist" comment="" />
+    <list default="true" id="10dbc1f6-4c9e-4537-8a30-b591a76ea5ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/simulations/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluations/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluations/evaluations.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/evaluations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluations/gateway.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/gateway.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluations/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluations/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/simulation_gtw.go" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/gateway.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/simulation_handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/simulation_storage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulations/simulations.go" beforeDir="false" afterPath="$PROJECT_DIR$/simulations/simulations.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sites/sites_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/sites/sites_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +46,16 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.15.6/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1r4hSVbuUZiatjJmgDgjsh7VIL0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,24 +64,62 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmd" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/simulations" />
       <recent name="$PROJECT_DIR$/evaluations" />
       <recent name="$PROJECT_DIR$/cmd" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/cmd" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1864" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618250066648">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1864" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.802/1440.23.1920.1057@1440.23.1920.1057" timestamp="1618250066648" />
+    <state x="1909" y="190" key="SettingsEditor" timestamp="1618250013442">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1909" y="190" key="SettingsEditor/0.0.1440.825/1440.23.1920.1057@1440.23.1920.1057" timestamp="1618243298961" />
+    <state x="1909" y="190" key="SettingsEditor/0.23.1440.802/1440.23.1920.1057@1440.23.1920.1057" timestamp="1618250013442" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1618244027383">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.1440.802/1440.23.1920.1057@1440.23.1920.1057" timestamp="1618244027383" />
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1618248518311">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1440.802/1440.23.1920.1057@1440.23.1920.1057" timestamp="1618248518311" />
   </component>
 </project>

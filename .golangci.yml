@@ -1,0 +1,91 @@
+run:
+  tests: false
+  timeout: 5m
+
+linters-settings:
+  gocritic:
+    enabled-tags:
+      - diagnostic
+    disabled-tags:
+      - performance
+      - style
+  golint:
+    min-confidence: 0
+  misspell:
+    locale: US
+  whitespace:
+    multi-if: true
+    multi-func: true
+  gomodguard:
+    list-type: blacklist
+    blocked:
+      modules:
+        - github.com/newrelic/go-agent:
+            reason: "Use github.com/newrelic/go-agent/v3 module instead"
+
+linters:
+  disable-all: true
+  enable:
+    # List of enabled-by-default linters that we explicitly opt-in.
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+
+    # List of disabled-by-default linters that we explicitly opt-in.
+    - asciicheck
+    - bodyclose
+    # depguard
+    # dogsled
+    # dupl
+    # errorlint
+    # exhaustive
+    # exhaustivestruct
+    # exportloopref
+    # funlen
+    # gci
+    # gochecknoglobals
+    - gochecknoinits
+    # gocognit
+    # goconst
+    - gocritic
+    # gocyclo
+    # godot
+    # godox
+    # goerr113
+    - gofmt
+    # gofumpt
+    # goheader
+    - goimports
+    # golint
+    # gomnd
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    # interfacer
+    # lll
+    # maligned
+    - misspell
+    # nakedret
+    # nestif
+    # nlreturn
+    - noctx
+    # nolintlint
+    # prealloc
+    - rowserrcheck
+    # scopelint
+    - sqlclosecheck
+    - stylecheck
+    # testpackage
+    # tparallel
+    # unconvert
+    # unparam
+    - whitespace
+    # wrapcheck
+    # wsl

@@ -2,8 +2,9 @@ package simulations
 
 import (
 	"errors"
-	"microservices-arch/sites"
-	)
+
+	"github.com/emstoppel/microservices-arch/sites"
+)
 
 var (
 	ErrInvalidSite = errors.New("the simulation has an invalid site")
@@ -32,8 +33,7 @@ type EvaluationParams map[string]interface{}
 type SimulationRules map[string]interface{}
 
 func (s SimulationSetup) IsValid() error {
-	//TODO check if entity is valid
-	if !(s.Site) {
+	if !sites.Exists(s.Site) {
 		return ErrInvalidSite
 	}
 	return nil
