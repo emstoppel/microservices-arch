@@ -6,6 +6,7 @@ import "github.com/emstoppel/microservices-arch/simulations"
 type Handler interface {
 	//PostEvaluation does
 	PostEvaluation()
+	GetGateway() Gateway
 }
 
 const URL = "/evaluations"
@@ -14,10 +15,14 @@ type handlerImpl struct {
 	gtw Gateway
 }
 
-func NewEvaluationService(db string, simGTW simulations.Gateway) Handler {
+func NewEvaluationsService(db string, simGTW simulations.Gateway) Handler {
 	return &handlerImpl{
-		gtw: NewGateway(db, simGTW),
+		gtw: newGateway(db, simGTW),
 	}
+}
+
+func (h *handlerImpl) GetGateway() Gateway{
+	return h.gtw
 }
 
 func (h *handlerImpl) PostEvaluation() {

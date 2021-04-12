@@ -21,7 +21,7 @@ type gateway struct {
 	dao    Dao
 }
 
-func NewGateway(db string, simGTW simulations.Gateway) Gateway {
+func newGateway(db string, simGTW simulations.Gateway) Gateway {
 	return &gateway{dao: NewDao(db), simGTW: simGTW}
 }
 
