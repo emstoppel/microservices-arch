@@ -1,8 +1,8 @@
-package evaluations
+package evaluation
 
 import (
 	"context"
-	"github.com/emstoppel/microservices-arch/simulations"
+	"github.com/emstoppel/microservices-arch/simulation"
 )
 
 //go:generate mockgen -destination=./mocks/mock_gateway.go -package=evaluationsmocks -source=gateway.go Gateway
@@ -10,25 +10,25 @@ import (
 // Always comment wat Gateway is
 type Gateway interface {
 	// Always comment what CreateEvaluation does
-	CreateEvaluation(ctx context.Context, evaluation EvaluationData)
+	Create(ctx context.Context, evaluation EvaluationData)
 	//Always comment what GetEvaluations does, you can refer to other functions
 	//like CreateEvaluation
-	GetEvaluations(ctx context.Context, tag string)
+	Get(ctx context.Context, tag string)
 }
 
 type gateway struct {
-	simGTW simulations.Gateway
+	simGTW simulation.Gateway
 	dao    Dao
 }
 
-func newGateway(db string, simGTW simulations.Gateway) Gateway {
+func newGateway(db string, simGTW simulation.Gateway) Gateway {
 	return &gateway{dao: NewDao(db), simGTW: simGTW}
 }
 
-func (r *gateway) CreateEvaluation(ctx context.Context, evaluation EvaluationData) {
+func (r *gateway) Create(ctx context.Context, evaluation EvaluationData) {
 	//maybe do smth with simGTW ;)
 }
 
-func (r *gateway) GetEvaluations(ctx context.Context, tag string) {
+func (r *gateway) Get(ctx context.Context, tag string) {
 	//maybe do smth with simGTW ;)
 }

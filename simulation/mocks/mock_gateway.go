@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	simulations "github.com/emstoppel/microservices-arch/simulations"
+	simulations "github.com/emstoppel/microservices-arch/simulation"
 	gomock "github.com/golang/mock/gomock"
 )
 
@@ -36,25 +36,25 @@ func (m *MockGateway) EXPECT() *MockGatewayMockRecorder {
 }
 
 // GetSimulation mocks base method.
-func (m *MockGateway) GetSimulation(ctx context.Context, simulationID int64) {
+func (m *MockGateway) Get(ctx context.Context, simulationID int64) {
 	m.ctrl.T.Helper()
-	m.ctrl.Call(m, "GetSimulation", ctx, simulationID)
+	m.ctrl.Call(m, "Get", ctx, simulationID)
 }
 
 // GetSimulation indicates an expected call of GetSimulation.
 func (mr *MockGatewayMockRecorder) GetSimulation(ctx, simulationID interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetSimulation", reflect.TypeOf((*MockGateway)(nil).GetSimulation), ctx, simulationID)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Get", reflect.TypeOf((*MockGateway)(nil).Get), ctx, simulationID)
 }
 
 // SaveSimulation mocks base method.
-func (m *MockGateway) SaveSimulation(ctx context.Context, request simulations.SimulationSetup) {
+func (m *MockGateway) Save(ctx context.Context, request simulations.SimulationSetup) {
 	m.ctrl.T.Helper()
-	m.ctrl.Call(m, "SaveSimulation", ctx, request)
+	m.ctrl.Call(m, "Save", ctx, request)
 }
 
 // SaveSimulation indicates an expected call of SaveSimulation.
 func (mr *MockGatewayMockRecorder) SaveSimulation(ctx, request interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SaveSimulation", reflect.TypeOf((*MockGateway)(nil).SaveSimulation), ctx, request)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Save", reflect.TypeOf((*MockGateway)(nil).Save), ctx, request)
 }

@@ -1,4 +1,4 @@
-package evaluations
+package evaluation
 
 type EvaluationInput map[string]interface{}
 type RuleSetOutput map[string]interface{}

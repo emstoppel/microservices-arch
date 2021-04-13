@@ -1,8 +1,8 @@
-package evaluations
+package evaluation
 
 import (
-	evaluationsmocks "github.com/emstoppel/microservices-arch/evaluations/mocks"
-	simulationsmocks "github.com/emstoppel/microservices-arch/simulations/mocks"
+	evaluationsmocks "github.com/emstoppel/microservices-arch/evaluation/mocks"
+	simulationsmocks "github.com/emstoppel/microservices-arch/simulation/mocks"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"net/http/httptest"
@@ -15,7 +15,7 @@ func TestMockSimulationGateways(t *testing.T) {
 
 	//init mocked dao
 	mockedDao := evaluationsmocks.NewMockDao(mockCtrl)
-	//init mocked simulations gtw
+	//init mocked simulation gtw
 	mockedSimulationGtw := simulationsmocks.NewMockGateway(mockCtrl)
 
 	// Initialize mocked gtw
@@ -25,5 +25,5 @@ func TestMockSimulationGateways(t *testing.T) {
 	}
 
 	c, _ := gin.CreateTestContext(httptest.NewRecorder())
-	evaluationsGateway.GetEvaluations(c, "TAG")
+	evaluationsGateway.Get(c, "TAG")
 }

@@ -1,4 +1,4 @@
-package sites
+package site
 
 var sites = []string{"MLA", "MLB"}
 

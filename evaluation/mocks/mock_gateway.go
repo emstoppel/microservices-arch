@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	evaluations "github.com/emstoppel/microservices-arch/evaluations"
+	evaluations "github.com/emstoppel/microservices-arch/evaluation"
 	gomock "github.com/golang/mock/gomock"
 )
 
@@ -36,25 +36,25 @@ func (m *MockGateway) EXPECT() *MockGatewayMockRecorder {
 }
 
 // CreateEvaluation mocks base method.
-func (m *MockGateway) CreateEvaluation(ctx context.Context, evaluation evaluations.EvaluationData) {
+func (m *MockGateway) Create(ctx context.Context, evaluation evaluations.EvaluationData) {
 	m.ctrl.T.Helper()
-	m.ctrl.Call(m, "CreateEvaluation", ctx, evaluation)
+	m.ctrl.Call(m, "Create", ctx, evaluation)
 }
 
 // CreateEvaluation indicates an expected call of CreateEvaluation.
 func (mr *MockGatewayMockRecorder) CreateEvaluation(ctx, evaluation interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "CreateEvaluation", reflect.TypeOf((*MockGateway)(nil).CreateEvaluation), ctx, evaluation)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Create", reflect.TypeOf((*MockGateway)(nil).Create), ctx, evaluation)
 }
 
 // GetEvaluations mocks base method.
-func (m *MockGateway) GetEvaluations(ctx context.Context, tag string) {
+func (m *MockGateway) Get(ctx context.Context, tag string) {
 	m.ctrl.T.Helper()
-	m.ctrl.Call(m, "GetEvaluations", ctx, tag)
+	m.ctrl.Call(m, "Get", ctx, tag)
 }
 
 // GetEvaluations indicates an expected call of GetEvaluations.
 func (mr *MockGatewayMockRecorder) GetEvaluations(ctx, tag interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetEvaluations", reflect.TypeOf((*MockGateway)(nil).GetEvaluations), ctx, tag)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Get", reflect.TypeOf((*MockGateway)(nil).Get), ctx, tag)
 }

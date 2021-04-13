@@ -1,9 +1,9 @@
-package simulations
+package simulation
 
 import (
 	"errors"
 
-	"github.com/emstoppel/microservices-arch/sites"
+	"github.com/emstoppel/microservices-arch/site"
 )
 
 var (
@@ -33,7 +33,7 @@ type EvaluationParams map[string]interface{}
 type SimulationRules map[string]interface{}
 
 func (s SimulationSetup) IsValid() error {
-	if !sites.Exists(s.Site) {
+	if !site.Exists(s.Site) {
 		return ErrInvalidSite
 	}
 	return nil

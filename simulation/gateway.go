@@ -1,4 +1,4 @@
-package simulations
+package simulation
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 //A
 type Gateway interface {
 	//SAVE
-	SaveSimulation(ctx context.Context, request SimulationSetup)
+	Save(ctx context.Context, request SimulationSetup)
 	//GET
-	GetSimulation(ctx context.Context, simulationID int64)
+	Get(ctx context.Context, simulationID int64)
 }
 
 type gateway struct {
@@ -23,9 +23,9 @@ func NewGateway(db string) Gateway {
 }
 
 // Setup will set the params to execute the simulation.
-func (simulation *gateway) SaveSimulation(ctx context.Context, request SimulationSetup) {
+func (simulation *gateway) Save(ctx context.Context, request SimulationSetup) {
 
 }
 
-func (simulation *gateway) GetSimulation(ctx context.Context, simulationID int64) {
+func (simulation *gateway) Get(ctx context.Context, simulationID int64) {
 }

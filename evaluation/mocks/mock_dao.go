@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	evaluations "github.com/emstoppel/microservices-arch/evaluations"
+	evaluations "github.com/emstoppel/microservices-arch/evaluation"
 	gomock "github.com/golang/mock/gomock"
 )
 
